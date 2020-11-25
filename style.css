@@ -1,0 +1,10 @@
+body {
+    padding: 1rem;
+    background-color: gray;
+}
+
+.cat {
+    display: block;
+    width: 80%;
+    min-width: 50%;
+}

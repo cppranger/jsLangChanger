@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport">
+        <title>Lang Changer v0.1</title>
+        <link rel="shortcut icon" href="/media/favicon.png" type="image/png">
+        <link rel="stylesheet" href="style.css" type="text/css"> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-light bg-info container">
+                <a class="navbar-brand text-white">Lang Changer v0.1</a>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-secondary" id="en" onClick = "getdetails(this)">English</button>
+                    <button type="button" class="btn btn-secondary" id="ru" onClick = "getdetails(this)">Russian</button>
+                    <button type="button" class="btn btn-secondary" id="de" onClick = "getdetails(this)">German</button>
+                </div>
+              </nav>
+        </header>
+        <section>
+            <div class="container bg-light">
+                <div class="row">
+                    <div class="col-3">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">github: <a href="https://github.com/cppranger">@cppranger</a></li>
+                            <li class="list-group-item">email: <a href="mailto:keksovska@gmail.com">keksovska@gmail.com</a></li>
+                        </ul> 
+                    </div>
+                    <div class="col-9">
+                        <h1 id="welcome">Welcome!</h1>
+                        <div class="container">
+                            <div class="row">
+                                
+                                <div class="col-9">
+                                    <p class="text-left" id="info">It's a little pet project, whose goal is to write a script in JavaScript, which switches the language on the page. 
+                                        Technologies such as HTML, CSS and JavaScript were used to create this project. 
+                                        Also used Bootstrap. If you click on the <ins><i>"Russian"</i></ins> button, the page text will change to Russian. 
+                                        If you click on the <ins><i>"German"</i></ins>, the page text will change to German.
+                                        If you click on the <ins><i>"English"</i></ins>, the text does not change, since it is already in English.
+                                        You will also hear a cat meow.
+                                    </p>
+                                </div>
+
+                                <div class="col-3">
+                                    <figure class="figure">
+                                        <img src="media/cat.jpg" class="figure-img img-fluid rounded mx-auto d-block cat" alt="a cat in a hat">
+                                        <figcaption class="figure-caption text-center" id="catSays">A cat in a hat says: "Hello, my friend!"</figcaption>
+                                    </figure>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
